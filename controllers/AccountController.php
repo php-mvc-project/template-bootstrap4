@@ -17,7 +17,7 @@ class AccountController extends Controller {
 
     public function __construct() {
         // set model type for actions
-        Model::use(array('index', 'login'), 'Login');
+        Model::set(array('index', 'login'), 'Login');
 
         // required fields
         Model::required('Login', 'username');

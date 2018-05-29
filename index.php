@@ -47,7 +47,7 @@ AppBuilder::useValidation(array(
 // AppBuilder::useCache(new PhpMvc\FileCacheProvider());
 
 // custom handlers
-AppBuilder::use(function(PhpMvc\AppContext $appContext) {
+AppBuilder::useAppContext(function(PhpMvc\AppContext $appContext) {
     /*
     // pre-init application handler
     $appContext->addPreInit(function(PhpMvc\ActionContext $actionContext) {

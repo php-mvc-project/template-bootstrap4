@@ -46,7 +46,12 @@ use PhpMvc\Html, PhpMvc\View;
 
     <footer>
         <div class="container">
-            Copyright &copy; My Application, <?=date('Y')?>
+            Copyright &copy; My Application, <?=date('Y')?><br />
+            <small>
+                This page is created in <?=round(microtime(true) - PhpMvc\HttpContext::getCurrent()->getRequest()->server('REQUEST_TIME_FLOAT'), 5)?> seconds
+                <br />
+                PHP v<?=phpversion()?> &middot; PHP MVC Project v<?=PhpMvc\Info::VERSION?>
+            </small>
         </div>
     </footer>
 </body>
