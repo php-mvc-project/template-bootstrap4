@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # redirect /index.php to /
+  RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*index\.php
+  RewriteRule ^index.php/?(.*)$ $1 [R=301,L]
+
+  # process all requests through index.php, except for actually existing files
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^(.*)$ index.php/$1?%{QUERY_STRING} [QSA,L]
+</IfModule>

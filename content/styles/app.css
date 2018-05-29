@@ -1,0 +1,7 @@
+header {
+  margin-bottom: 24px;
+}
+
+.set-colon-to-labels label::after {
+  content: ':';
+}

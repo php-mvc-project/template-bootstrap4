@@ -1,0 +1,18 @@
+{
+    "name": "php-mvc-project/template-bootstrap4",
+    "description": "Template for initializing the PHP MVC Project application using Bootstrap v4.",
+    "keywords": ["php mvc project", "templates", "template", "mvc"],
+    "license": "MIT",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Meet Aleksey",
+            "homepage": "https://github.com/meet-aleksey"
+        }
+    ],
+    "require": {
+        "php-mvc-project/php-mvc": "^1.1.1",
+        "components/jquery": "3.3.1",
+        "twbs/bootstrap": "4.1.1"
+    }
+}
